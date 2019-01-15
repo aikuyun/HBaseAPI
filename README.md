@@ -15,7 +15,9 @@ startKey, endKey, numRegions 这三个参数。还可以异步的创建表格。
 
 解释：
 
-**HBaseAdmin** Provides an interface to manage HBase database table metadata + general administrative functions. 
+**HBaseAdmin** 管理元数据，并包含一些管理表的方法。
 
-**HTableDescriptor**contains the details about an HBase table  such as the descriptors of all the column families, is the table a catalog table, <code> -ROOT- </code> or
-<code> hbase:meta </code>, if the table is read only, the maximum size of the memstore, when the region split should occur, coprocessors associated with it etc...
+**HTableDescriptor** 表的描述，可以传入表的 name
+
+**HColumnDescriptor** 添加列族，设置缓存
+
